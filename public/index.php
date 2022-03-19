@@ -9,7 +9,11 @@ use DI\ContainerBuilder;
 use Slim\Factory\AppFactory;
 use Slim\Factory\ServerRequestCreatorFactory;
 
+echo __DIR__ . "++";
+
 require __DIR__ . '/../vendor/autoload.php';
+
+session_start();
 
 // Instantiate PHP-DI ContainerBuilder
 $containerBuilder = new ContainerBuilder();
